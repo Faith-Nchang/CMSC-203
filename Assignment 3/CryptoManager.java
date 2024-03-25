@@ -1,10 +1,6 @@
 
 /**
 
- * Class: CMSC203  21575
-
- * Instructor: Grigoriy Grinberg
-
  * Description: This is a utility class that encrypts and decrypts a phrase using two
   different approaches. The first approach is called the Caesar Cipher and is a
   simple �substitution cipher� where characters in a message are replaced by a
@@ -12,18 +8,7 @@
   uses a key word, where each character in the word specifies the offset for
   the corresponding character in the message, with the key word wrapping around
   as needed.
-
- * Due:10/09/2023
-
- * Platform/compiler: ECLIPSE
-
- * I pledge that I have completed the programming  assignment independently.  
-
-*  I have not copied the code from a student or any source.  
-
-*  I have not given my code to any student. 
-
-*  Print your Name here: Faith Nchang
+  @author Faith Nchang
  
  */
 public class CryptoManager {
