@@ -1,14 +1,8 @@
 /*
- * Class: CMSC203 
- * Instructor: Grigoriy Grinberg
+
  * Description: a blue print of the management company
- * Due: 10/23/2023
- * Platform/compiler: Eclipse
- * I pledge that I have completed the programming 
- * assignment independently. I have not copied the code 
- * from a student or any source. I have not given my code 
- * to any student.
-   Print your Name here: Faith Fru Nchang
+
+ * @author Faith Fru Nchang
 */
 
 public class ManagementCompany {
@@ -143,9 +137,9 @@ public class ManagementCompany {
 	 * 
 	 * @return totalRent - sum of the rent of all properties in the properties array
 	 */
-	public int getTotalRent()
+	public double getTotalRent()
 	{
-		int totalRent = 0;
+		double totalRent = 0.0;
 		for (int property = 0; property < numberOfProperties; property++)
 			totalRent +=  properties[property].getRentAmount();
 		return totalRent;
@@ -208,9 +202,8 @@ public class ManagementCompany {
 	{
 		// creates a new property object
 		Property  property = new Property(name, city, rent, owner);
-		// calls DetermineReturnValueOfAddProperty() and returns its value
+		// calls DetermineReturnValueOfAddProperty() to add the new property and returns the index if all the requirements are met 
 		return DetermineReturnValueOfAddProperty(property);
-		
 	
 	}
 	
@@ -285,7 +278,12 @@ public class ManagementCompany {
 	public void removeLastProperty()
 	{
 		// sets the last in the properties array to null
-		properties[numberOfProperties-1] = null;
+		if (numberOfProperties !=0)
+		{
+			properties[numberOfProperties-1] = null;
+			numberOfProperties--;
+		}
+		
 	}
 	
 	/**
