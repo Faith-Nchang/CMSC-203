@@ -1,16 +1,8 @@
 import java.util.ArrayList;
 import java.util.Random;
 /*
- * Class: CMSC203 
- * Instructor: Grigoriy Grinberg
  * Description: Order class - process orders the Beverage shop receives
- * Due: 12/4/2023
- * Platform/compiler: Eclipse
- * I pledge that I have completed the programming  
- * assignment independently. I have not copied the code 
- * from a student or any source. I have not given my code 
- * to any student.
-   Print your Name here: Faith Fru Nchang.
+ * @author Faith Fru Nchang.
 */
 public class Order implements OrderInterface, Comparable<Order>{
 	private int orderNo;
